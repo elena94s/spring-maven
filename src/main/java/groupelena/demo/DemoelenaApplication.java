@@ -11,3 +11,10 @@ public class DemoelenaApplication {
 	}
 
 }
+@TestController
+	class HelloWorldController {
+		@GetMapping ("/")
+		public String sayHello () {
+			return "Hello,World!";
+		}
+	}
